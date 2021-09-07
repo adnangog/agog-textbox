@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agog Textbox</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="text.css">
+    <script src="agogTextbox.js"></script>
+</head>
+
+<body>
+    <h1>AGOG TEXTBOX</h1>
+    <div class="container">
+        <input type="text" data-is-multiple="true" aria-placeholder="Kullanıcılar" data-data='[
+        { "id": 34, "name": "İstanbul" },
+        { "id": 6, "name": "Ankara" },
+        { "id": 35, "name": "İzmir" },
+        { "id": 26, "name": "Eskişehir" },
+        { "id": 58, "name": "Sivas" }
+    ]'>
+
+    <input type="text" data-url="https://restcountries.eu/rest/v2/all" data-value-field="alpha3Code" data-text-field="name" aria-placeholder="Ülke girin">
+
+    <input type="text" aria-placeholder="İlçe">
+</div>
+
+
+    
+    <script>
+        agogTextbox.init();
+    </script>
+</body>
+
+</html>

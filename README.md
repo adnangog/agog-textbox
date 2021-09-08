@@ -18,3 +18,19 @@
 | **valueField** | id | default json key for value field |
 | **callbackBefore** | function() {} | function to run before plugin runs |
 | **callbackAfter** | function() {} | function to run after plugin runs |
+
+## Data Attributes (for the current element)
+
+| Option | Values  | Description |
+|--|--|--|
+| **data-is-multiple** | true or false | sets the use of multi-select |
+| **data-data** | json data | data for auto complete or selection  |
+| **data-url** | url | url of the data you want to use |
+| **data-value-field** | string | json key for value field |
+| **data-text-field** | string | json key for text field |
+
+## Other Attributes (for the current element)
+
+| Option | Values  | Description |
+|--|--|--|
+| **aria-placeholder** | string | placeholder text |

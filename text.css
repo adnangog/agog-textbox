@@ -1,0 +1,163 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
+
+.agogTextbox-main {
+    position: relative;
+    font-size: 1rem;
+    width: 100%;
+    color: #000;
+    /* max-width: 300px; */
+}
+.agogTextbox-title {
+    position: relative;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all .1s linear;
+    background-color: #fff;
+}
+.agogTextbox-title span.inner {
+    padding: 5px;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+[data-multiple] .agogTextbox-title span.inner {
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+.agogTextbox-title:hover {
+    border: 1px solid #aaa;
+}
+
+.agogTextbox-empty {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.agogTextbox-tag {
+    position: relative;
+    display: inline-block;
+    background-color: #e4e4e4;
+    border-radius: 8px;
+    padding: 3px 30px 3px 10px;
+    font-size: .9rem;
+    max-width: 45%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.agogTextbox-tag-close {
+    width: 26px;
+    height: 100%;
+    padding-right: 4px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-left: 1px solid #ccc;
+    background-color: #ccc;
+}
+.agogTextbox-tag:nth-child(1){
+    margin-left: 0;
+}
+.agogTextbox-sub {
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    max-height: 200px;
+    overflow-y: auto;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-top: none;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    font-size: .9rem;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-20px);
+    transition: all .1s linear;
+    z-index: 1;
+}
+.agogTextbox-search {
+    position: sticky;
+    top:0;
+    left:0;
+    right:0;
+    padding: 10px;
+    background-color: #f2f2f2;
+}
+.agogTextbox-search input {
+    width:100%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 3px 10px;
+}
+.agogTextbox-clear {
+    width: 30px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.agogTextbox-sub strong {
+    display: block;
+    padding: 10px;
+}
+.agogTextbox-sub span {
+    display: block;
+    padding: 10px;
+    cursor: pointer;
+    background-color: #fff;
+    transition: all .1s linear;
+}
+.agogTextbox-sub span:hover{
+    background-color: #739ae4;
+    color: #fff;
+}
+.agogTextbox-sub span.active {
+    background-color: #386ccc;
+    border-bottom: 1px solid #739ae4;
+    color: #fff;
+}
+
+/* .agogTextbox-main active start*/
+.agogTextbox-main.active .agogTextbox-title::after {
+    transform: rotateX(180deg);
+}
+.agogTextbox-main.active .agogTextbox-title {
+    background-color: #fff;
+    border-color: #86b7fe;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 25%);
+}
+.agogTextbox-main.active .agogTextbox-sub {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+/* .agogTextbox-main active end*/
+
+
+
+/* yeni */
+.form-item {
+    display: inline-block;
+    border: none;
+    font-size: 1rem;
+    padding: 0 5px;
+}
+.form-item:focus {
+    border: none;
+    outline: none;
+}

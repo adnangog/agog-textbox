@@ -17,26 +17,21 @@
 
     // Varsayılan ayarlar
     var defaults = {
-        selector: '[type="text"]',
+        selector: '[data-agog-textbox]',
         mainClass: 'agogTextbox-main',
         titleClass: 'agogTextbox-title',
         emptyClass: 'agogTextbox-empty',
         subClass: 'agogTextbox-sub',
-        searchClass: 'agogTextbox-search',
-        clearClass: 'agogTextbox-clear',
         mainPlaceHolder: '...',
-        filterPlaceHolder: 'filtrele',
         isMultiple: false,
-        isTag:true,
+        isTag: false,
         maxItems: null,
         delimiter: ",",
         textField: "name",
         valueField: "id",
         callbackBefore: function () {
-            console.log("agogTextbox başlatılıyor.")
         },
         callbackAfter: function () {
-            console.log("agogTextbox bitiriliyor.")
         }
     };
 

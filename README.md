@@ -34,3 +34,25 @@
 | Option | Values  | Description |
 |--|--|--|
 | **aria-placeholder** | string | placeholder text |
+
+## Example
+
+    <div class="container">
+        <input type="text" data-agog-textbox data-is-multiple="true" aria-placeholder="Kullanıcılar" data-data='[
+        { "id": 34, "name": "İstanbul" },
+        { "id": 6, "name": "Ankara" },
+        { "id": 35, "name": "İzmir" },
+        { "id": 26, "name": "Eskişehir" },
+        { "id": 58, "name": "Sivas" }
+    ]'>
+
+        <input data-agog-textbox type="text" data-url="https://restcountries.eu/rest/v2/all"
+            data-value-field="alpha3Code" data-text-field="name" aria-placeholder="Ülke girin">
+
+        <input type="text" data-agog-textbox aria-placeholder="İlçe">
+    </div>
+
+    <script>
+        agogTextbox.init();
+    </script>
+

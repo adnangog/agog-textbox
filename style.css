@@ -23,8 +23,16 @@ body {
     flex-direction: column;
     gap: 10px;
 }
+h1 {
+    font-weight: 300;
+}
 .agogTextbox-main {
     border-radius: 10px;
     padding: 10px;
     background-color: rgba(255, 255, 255, .1);
+}
+.agogTextbox-sub {
+    left: 10px;
+    right: 10px;
+    width: auto !important;
 }
